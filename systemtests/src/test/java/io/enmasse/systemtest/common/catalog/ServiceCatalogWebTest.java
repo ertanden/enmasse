@@ -191,7 +191,6 @@ class ServiceCatalogWebTest extends TestBase implements ISeleniumProviderFirefox
         AmqpClient client = amqpClientFactory.createQueueClient(brokeredSpace);
         client.getConnectOptions().setCredentials(developer);
         QueueTest.runQueueTest(client, queue);
-
     }
 
 }
